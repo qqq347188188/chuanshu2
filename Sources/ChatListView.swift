@@ -21,7 +21,7 @@ struct ChatListView: View {
     var body: some View {
         List {
             Section {
-                if conversations.isEmpty && newPeers.isEmpty {
+                if conversations.isEmpty && newDevices.isEmpty {
                     HStack(spacing: 10) {
                         ProgressView()
                         Text("正在搜索同一局域网内的设备…")

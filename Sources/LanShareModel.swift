@@ -277,7 +277,7 @@ final class LanShareModel: ObservableObject {
     // MARK: - 实际发送
 
     private func dispatch(messageID: String, conversationID: String, peer: Peer) {
-        guard var msg = conversations[conversationID]?.messages.first(where: { $0.id == messageID }) else {
+        guard let msg = conversations[conversationID]?.messages.first(where: { $0.id == messageID }) else {
             return
         }
         setStatus(messageID, in: conversationID, to: "sending")
