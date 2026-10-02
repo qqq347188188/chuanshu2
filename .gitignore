@@ -1,5 +1,0 @@
-*.xcodeproj
-build/
-*.xcarchive
-.DS_Store
-*.ipa
